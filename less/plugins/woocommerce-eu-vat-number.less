@@ -1,0 +1,40 @@
+#woocommerce_eu_vat_number {
+	margin-top: 20px;
+	padding-top: 30px;
+	overflow: hidden;
+	border-top: solid;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: tint(@color1,90%);
+	
+	h3 {
+		margin: 0;
+		margin-bottom: 0.65em;
+		padding: 0;
+		font-size: 1.35em;
+		line-height: 1.35;
+		color: @color2;
+		
+		&:before {
+			margin-right: 10px;
+			.fontawesome();
+			content: '\f1ad';
+		}
+	}
+	
+	p {
+		margin: 0;
+		padding: 0;
+		line-height: 1.40;
+		color: tint(@color1,15%);
+	}
+	
+	.form-row {
+		margin-top: 25px;
+		overflow: hidden;
+		
+		label {
+			margin-bottom: 5px;
+		}
+	}
+}

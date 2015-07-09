@@ -1,0 +1,194 @@
+/*
+Plugin Gravity Forms
+Support & documentation: http://www.gravityhelp.com/support/
+*/
+
+.gf-border1() {
+	border-style: solid;
+	border-width: 1px;
+	border-color: tint(@red,80%);
+	border-radius: 3px;
+	color: @red;
+	background-color: tint(@red,90%);
+}
+
+.gform_wrapper {
+
+	.gform_heading {
+		
+		h3 {}
+		
+		span.gform_description {
+			display: block;
+			padding-bottom: 30px;
+		}
+	}
+
+	.validation_error {
+		margin-bottom: 20px;
+		padding: 10px;
+		.gf-border1();
+	}
+	
+	.gform_body {
+		
+		ul.gform_fields {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		
+			&.top_label {}
+			&.description_above {}
+			&.description_below {}
+			
+			li {
+				margin: 0px;
+				margin-bottom: 15px;
+				padding: 0px;
+				
+				&.gfield {
+					
+					&.gfield_contains_required {
+					}
+					
+					&.gfield_error {
+						
+						&.gfield_contains_required {
+							
+							label {
+								color: @red;
+							}
+						
+							input {
+								.gf-border1();
+							}
+							
+							.ginput_container {
+								
+								label {
+									color: @red !important;
+								}
+							}
+						}
+						
+					}
+					
+					label {
+						
+						.gfield_required {
+							margin-left: 3px;
+							color: red;
+						}
+					}
+					
+					.ginput_complex {
+						overflow: hidden;
+					
+						label {
+							display: block;
+							margin-top: 5px;
+							margin-bottom: 10px;
+							font-size: 80%;
+							line-height: normal;
+							color: tint(@color1,65%);
+						}
+						
+						.ginput_left {
+							float: left;
+							width: 45%;
+						}
+						
+						.ginput_right {
+							display: inline;
+							float: right;
+							width: 45%;
+						}
+					}
+					
+					.ginput_container {
+						
+						input, textarea {
+							width: 100%;
+							
+							&:last-child {
+							}
+						}
+						
+						textarea {}
+						
+						ul.gfield_checkbox,
+						ul.gfield_radio {
+							margin-top: 8px;
+							list-style: none;
+							
+							li {
+								margin: 0px;
+								padding: 0px;
+								
+								&:before {}
+								
+								input {
+									width: 20px;
+								}
+								
+								label {}
+							}
+						}
+					}
+					
+					.clear-multi {
+						
+						.ginput_container {
+							
+							&:last-child {}
+							
+							label {}
+						}
+					}
+					
+					.gfield_description {
+						margin-top: 7px;
+						font-size: 80%;
+						line-height: 150%;
+						color: tint(@color1,65%);
+						
+						&.validation_message {
+							display: inline-block;
+							margin-top: 5px;
+							font-size: 80%;
+							color: red;
+						}
+					}
+				}
+				
+				&.gfield_price {
+					text-align: left;
+				}
+				
+				&.gsection {
+					
+					&:first-child {}
+					
+					h2 {}
+					
+					.gsection_description {}
+				}
+				
+				label {}
+			}
+		}
+	}
+	
+	.gform_footer {
+		
+		input.button {}
+	}	
+}
+
+.gform_confirmation_wrapper {
+	
+	#gforms_confirmation_message {
+		
+	}
+}
+

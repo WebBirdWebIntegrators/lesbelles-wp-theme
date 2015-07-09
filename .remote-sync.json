@@ -1,0 +1,12 @@
+{
+  "port": "22",
+  "transport": "sftp",
+  "uploadOnSave": false,
+  "hostname": "shared-016.openminds.be",
+  "target": "default_www/wp-content/themes/lesbelles",
+  "ignore": [
+    ".git/**"
+  ],
+  "username": "lesbelles",
+  "password": "jrPxy!vpr9"
+}
